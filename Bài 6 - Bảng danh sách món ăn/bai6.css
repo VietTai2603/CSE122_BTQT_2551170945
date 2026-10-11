@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fcf8f2;
+  margin: 0;
+  padding: 20px;
+}
+.khung-chua {
+  background-color: #fdfaf3;
+  border: 1px solid #e8dec8;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.tieu-de {
+  color: #e65100;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.bo-cuc {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+.cot-anh {
+  flex: 0 0 260px;
+}
+.anh-minhhoa {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.cot-bang {
+  flex: 1;
+}
+.bang-mon {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+.bang-mon th {
+  background-color: #e65100;
+  color: #ffffff;
+  padding: 10px 12px;
+  font-weight: bold;
+  text-align: center;
+}
+.bang-mon td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e0d6c2;
+  color: #333333;
+}
+.bang-mon tbody tr:nth-child(even) {
+  background-color: #fdf8ef;
+}
+.cot-stt {
+  width: 60px;
+  text-align: center;
+}
+.can-giua {
+  text-align: center;
+}
+.cot-ten {
+  text-align: center;
+}
