@@ -1,0 +1,33 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.khung-tour {
+  background-color: #c9a227;
+  color: #ffffff;
+  witdh: 800px;
+  padding: 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.khung-tour h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+.anhtuongthanh {
+  float: right;
+  witdh: 300px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  border: 3px solid rgba(255, 255, 255, 0.7);
+}
+.khung-tour p {
+  text-align: justify;
+  line-height: 1, 6;
+  margin-bottom: 15px;
+}
