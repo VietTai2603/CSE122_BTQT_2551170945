@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(180deg, #7ec8e3, #0a5c8a);
+  min-height: 100vh;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.khung {
+  background-color: white;
+  width: 95%;
+  max-width: 1250px;
+  padding: 20px 40px 40px 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+h1 {
+  color: #0b3d5c;
+  font-size: 40px;
+  text-align: center;
+  padding: 20px;
+}
+.hop-dau {
+  background-color: #0b3d5c;
+  color: white;
+  border-radius: 8px;
+  witdh: 100%;
+  font-style: 22px;
+  font-style: italic;
+  margin: 10px auto 25px auto;
+  padding: 20px;
+  text-align: justify;
+}
+.nd-chinh img {
+  float: right;
+  width: 38%;
+  border-radius: 8px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+.nd-chinh p {
+  font-size: 22px;
+  text-align: justify;
+  margin-bottom: 20px;
+  line-height: 1, 6;
+}
+.drop-cap::first-letter {
+  font-size: 65px;
+  font-weight: bold;
+  color: #0b3d5c;
+  float: left;
+  line-height: 0.8;
+  margin-right: 10px;
+}
