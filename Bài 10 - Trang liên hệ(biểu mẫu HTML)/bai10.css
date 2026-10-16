@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #e2e8f0;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+.khung-form {
+  width: 100%;
+  max-width: 680px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.dau-form {
+  background-color: #0f766e;
+  color: #ffffff;
+  padding: 24px 30px;
+}
+.dau-form h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.dau-form p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.noi-dung-form {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.hang-hai-cot {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.nhom-nhap-lieu {
+  display: flex;
+  flex-direction: column;
+}
+.nhom-nhap-lieu label {
+  color: #334155;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.nhom-nhap-lieu input,
+.nhom-nhap-lieu select,
+.nhom-nhap-lieu textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #1e293b;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.nhom-nhap-lieu input:focus,
+.nhom-nhap-lieu select:focus,
+.nhom-nhap-lieu textarea:focus {
+  border-color: #0f766e;
+}
+.nhom-nhap-lieu textarea {
+  resize: vertical;
+}
+
+.nhom-dong-y {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 5px;
+}
+.nhom-dong-y input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #0f766e;
+  cursor: pointer;
+}
+.nhom-dong-y label {
+  font-size: 13px;
+  color: #334155;
+  cursor: pointer;
+}
+
+.nhom-nut-bam {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+.nut-gui {
+  background-color: #0f766e;
+  color: #ffffff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.nut-gui:hover {
+  background-color: #0d655e;
+}
+.nut-nhap-lai {
+  background-color: #e2e8f0;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.nut-nhap-lai:hover {
+  background-color: #cbd5e1;
+}
