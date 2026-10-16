@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.5;
+}
+.tieu-de-trang {
+  padding: 15px 20px;
+  border-bottom: 2px solid #1668c1;
+}
+
+.tieu-de-trang h1 {
+  color: #1668c1;
+  font-size: 26px;
+}
+
+.khung-chua {
+  display: flex;
+  min-height: 100vh;
+  padding: 20px;
+  gap: 30px;
+}
+
+.menu-doc {
+  width: 250px;
+  flex-shrink: 0;
+  border-right: 1px solid #e0e0e0;
+  padding-right: 15px;
+}
+.menu-doc h3 {
+  color: #1668c1;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.menu-doc ul {
+  list-style: none;
+}
+
+.menu-doc li {
+  margin-bottom: 10px;
+}
+.menu-doc a {
+  color: #1668c1;
+  text-decoration: none;
+  font-size: 15px;
+}
+.menu-doc a:hover {
+  text-decoration: underline;
+}
+.noi-dung-chinh {
+  flex-grow: 1;
+}
+
+.tieu-de-chuyen-muc {
+  background-color: #1668c1;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.bai-viet {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #cccccc;
+}
+
+.chu-bai-viet {
+  flex-grow: 1;
+  padding-right: 20px;
+}
+.tieu-de-bai-viet {
+  color: #1668c1;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.tieu-de-bai-viet:hover {
+  text-decoration: underline;
+}
+.chu-bai-viet p {
+  font-size: 14px;
+  color: #555555;
+  margin-top: 5px;
+}
+.anh-bai-viet img {
+  width: 140px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+.chan-trang {
+  text-align: right;
+  padding: 20px;
+}
+.nut-ve-dau-trang {
+  color: #1668c1;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nut-ve-dau-trang:hover {
+  text-decoration: underline;
+}
