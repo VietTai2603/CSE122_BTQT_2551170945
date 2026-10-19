@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.nen-trang {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 30px;
+}
+
+.khung-dong-ho {
+  background-color: #000000;
+  padding: 25px 35px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.khung-dong-ho img {
+  height: 52px;
+  width: auto;
+}
+
+.khung-loi-chao {
+  background-color: #ffffff;
+  padding: 20px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+#hien-thi-loi-chao {
+  color: #c62828;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
