@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.nen-trang {
+  font-family: Arial, sans-serif;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.vo-may-tinh {
+  background-color: #111827;
+  width: 380px;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.man-hinh {
+  background-color: #022c22;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  text-align: right;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chu-bieu-thuc {
+  color: #4ade80;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.chu-ket-qua {
+  color: #4ade80;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.ban-phim {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.nut-bam {
+  height: 60px;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nut-bam:hover {
+  opacity: 0.85;
+}
+
+.nut-so {
+  background-color: #25313f;
+  color: #e5e7eb;
+}
+
+.nut-phep-tinh {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+.nut-chuc-nang {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+.nut-bang {
+  background-color: #16a34a;
+  color: #ffffff;
+}
+
+.nut-so-0 {
+}

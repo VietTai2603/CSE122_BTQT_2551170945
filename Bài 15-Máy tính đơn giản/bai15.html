@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bài 15- Máy tính đơn giản</title>
+    <link rel="stylesheet" href="bai15.css" />
+  </head>
+  <body class="nen-trang">
+    <div class="vo-may-tinh">
+      <div class="man-hinh">
+        <div id="bieu-thuc" class="chu-bieu-thuc">12 + 8 × 3</div>
+        <div id="ket-qua" class="chu-ket-qua">36</div>
+      </div>
+
+      <div class="ban-phim">
+        <button class="nut-bam nut-chuc-nang" onclick="xoaManHinh()">C</button>
+        <button class="nut-bam nut-chuc-nang" onclick="themKyTu('(')">
+          ()
+        </button>
+        <button class="nut-bam nut-chuc-nang" onclick="themKyTu('%')">%</button>
+        <button class="nut-bam nut-phep-tinh" onclick="themKyTu('/')">÷</button>
+
+        <button class="nut-bam nut-so" onclick="themKyTu('7')">7</button>
+        <button class="nut-bam nut-so" onclick="themKyTu('8')">8</button>
+        <button class="nut-bam nut-so" onclick="themKyTu('9')">9</button>
+        <button class="nut-bam nut-phep-tinh" onclick="themKyTu('*')">×</button>
+
+        <button class="nut-bam nut-so" onclick="themKyTu('4')">4</button>
+        <button class="nut-bam nut-so" onclick="themKyTu('5')">5</button>
+        <button class="nut-bam nut-so" onclick="themKyTu('6')">6</button>
+        <button class="nut-bam nut-phep-tinh" onclick="themKyTu('-')">-</button>
+        <button class="nut-bam nut-so" onclick="themKyTu('1')">1</button>
+        <button class="nut-bam nut-so" onclick="themKyTu('2')">2</button>
+        <button class="nut-bam nut-so" onclick="themKyTu('3')">3</button>
+        <button class="nut-bam nut-phep-tinh" onclick="themKyTu('+')">+</button>
+
+        <button
+          class="nut-bam nut-so nut-so-0"
+          onclick="themKyTu('0')"
+        ></button>
+        <button class="nut-bam nut-so" onclick="themKyTu('.')">.</button>
+        <button class="nut-bam nut-bang" onclick="tinhKetQua()">=</button>
+      </div>
+    </div>
+
+    <script src="bai15.js"></script>
+  </body>
+</html>
