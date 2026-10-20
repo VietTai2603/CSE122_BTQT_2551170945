@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bài 17-Kiểm tra biểu mẫu bằng Java</title>
+    <link rel="stylesheet" href="bai17.css" />
+  </head>
+  <body class="nen-trang">
+    <!-- Khung form đăng ký -->
+    <form
+      id="form-dang-ky"
+      class="khung-form"
+      onsubmit="return kiemTraForm(event);"
+    >
+      <h2 class="tieu-de-form">Đăng ký tài khoản</h2>
+
+      <!-- Nhóm Họ tên -->
+      <div class="nhom-input">
+        <label for="ho-ten">Họ tên</label>
+        <input type="text" id="ho-ten" placeholder="Nhập họ và tên..." />
+        <div id="loi-ho-ten" class="thong-bao-loi"></div>
+      </div>
+
+      <!-- Nhóm Email -->
+      <div class="nhom-input">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Nhập địa chỉ email..." />
+        <div id="loi-email" class="thong-bao-loi"></div>
+      </div>
+
+      <!-- Nhóm Mật khẩu -->
+      <div class="nhom-input">
+        <label for="mat-khau">Mật khẩu</label>
+        <input
+          type="password"
+          id="mat-khau"
+          placeholder="Tối thiểu 6 ký tự..."
+        />
+        <div id="loi-mat-khau" class="thong-bao-loi"></div>
+      </div>
+
+      <!-- Nhóm Xác nhận mật khẩu -->
+      <div class="nhom-input">
+        <label for="xac-nhan-mat-khau">Xác nhận mật khẩu</label>
+        <input
+          type="password"
+          id="xac-nhan-mat-khau"
+          placeholder="Nhập lại mật khẩu..."
+        />
+        <div id="loi-xac-nhan" class="thong-bao-loi"></div>
+      </div>
+
+      <!-- Nút Đăng ký -->
+      <button type="submit" class="nut-dang-ky">Đăng ký</button>
+    </form>
+
+    <script src="bai17.js"></script>
+  </body>
+</html>
