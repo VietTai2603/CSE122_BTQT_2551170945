@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.nen-trang {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #222222;
+  padding: 40px 20px;
+}
+
+.bai-viet-chinh {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.tieu-de-bai-viet {
+  margin-bottom: 25px;
+}
+
+.tieu-de-bai-viet h1 {
+  color: #e65100;
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.tieu-de-phu {
+  color: #e65100;
+  font-size: 20px;
+  font-weight: normal;
+}
+.noi-dung-va-anh {
+  margin-bottom: 40px;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+.anh-hoa-noi {
+  float: right;
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+
+.doan-van-dau::first-letter {
+  font-size: 55px;
+  color: #e65100;
+  float: left;
+  line-height: 0.8;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.doan-van-dau {
+  margin-bottom: 20px;
+}
+
+.doan-van-thuong {
+  margin-bottom: 20px;
+}
+.khoi-huong-vi {
+  background-color: #f4fbf4;
+  border: 2px solid #2e7d32;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.tieu-de-khoi {
+  color: #2e7d32;
+  font-style: italic;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.danh-sach-hai-cot {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.danh-sach-hai-cot li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #333333;
+  break-inside: avoid;
+}
