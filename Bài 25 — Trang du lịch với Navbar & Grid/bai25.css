@@ -1,0 +1,18 @@
+body.nen-trang {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hero-section {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
