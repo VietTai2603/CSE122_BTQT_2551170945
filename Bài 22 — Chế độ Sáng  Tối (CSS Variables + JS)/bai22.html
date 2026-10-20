@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bài 22- Chế độ Tối / Sáng</title>
+    <link rel="stylesheet" href="bai22.css" />
+  </head>
+  <body class="toi">
+    <header class="thanh-tieu-de">
+      <h1>Chế độ Tối / Sáng</h1>
+      <label class="cong-tac-ngon-ngu">
+        <input
+          type="checkbox"
+          id="nut-gats-giao-dien"
+          checked
+          onclick="doiGiaoDien()"
+        />
+        <span class="thanh-truot"></span>
+      </label>
+    </header>
+
+    <main class="khung-noi-dung">
+      <div class="the-thong-tin">
+        <h2 class="tieu-de-the">Biến CSS (CSS Variables)</h2>
+        <p>
+          Toàn bộ màu sắc được khai báo trong :root và ghi đè bằng class .toi.
+        </p>
+      </div>
+
+      <div class="the-thong-tin">
+        <h2 class="tieu-de-the">Chuyển đổi bằng JavaScript</h2>
+        <p>
+          Nút gạt thêm/bỏ class .toi trên &lt;body&gt; — mọi thành phần tự đổi
+          màu.
+        </p>
+      </div>
+
+      <div class="the-thong-tin">
+        <h2 class="tieu-de-the">Chuyển màu mượt</h2>
+        <p>Dùng transition để màu nền và chữ chuyển dần, không bị giật.</p>
+      </div>
+    </main>
+
+    <footer class="chan-trang">
+      <p id="nhan-trang-thai">Đây là giao diện ở chế độ TỐI (đang bật).</p>
+    </footer>
+
+    <script src="bai22.js"></script>
+  </body>
+</html>

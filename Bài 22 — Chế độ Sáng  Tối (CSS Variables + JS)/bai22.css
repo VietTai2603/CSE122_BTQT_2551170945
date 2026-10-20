@@ -1,0 +1,128 @@
+/* Thiết lập biến CSS mặc định cho Chế độ SÁNG (Light Mode) */
+:root {
+  --mau-nen: #f8fafc;
+  --mau-chu: #0f172a;
+  --mau-the: #ffffff;
+  --mau-vien: #cbd5e1;
+  --mau-nhan: #2563eb;
+  --mau-tieu-de: #1e293b;
+}
+/* Ghi đè biến CSS khi trang mang class .toi (Dark Mode) theo gợi ý */
+body.toi {
+  --mau-nen: #0f172a;
+  --mau-chu: #94a3b8;
+  --mau-the: #1e293b;
+  --mau-vien: #334155;
+  --mau-nhan: #38bdf8;
+  --mau-tieu-de: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease,
+    border-color 0.4s ease;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--mau-nen);
+  color: var(--mau-chu);
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.thanh-tieu-de {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+}
+
+.thanh-tieu-de h1 {
+  color: var(--mau-tieu-de);
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cong-tac-ngon-ngu {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 32px;
+}
+
+.cong-tac-ngon-ngu input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.thanh-truot {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #cbd5e1;
+  border-radius: 32px;
+  transition: 0.4s;
+}
+
+.thanh-truot:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .thanh-truot {
+  background-color: #2563eb;
+}
+
+input:checked + .thanh-truot:before {
+  transform: translateX(28px);
+}
+
+.khung-noi-dung {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.the-thong-tin {
+  background-color: var(--mau-the);
+  border: 1px solid var(--mau-vien);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.tieu-de-the {
+  color: var(--mau-nhan);
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.the-thong-tin p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.chan-trang {
+  max-width: 800px;
+  margin: 30px auto 0 auto;
+  font-size: 14px;
+}
