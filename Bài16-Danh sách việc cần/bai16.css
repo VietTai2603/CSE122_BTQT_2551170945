@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.nen-trang {
+  font-family: Arial, sans-serif;
+  background-color: #f4f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.khung-ung-dung {
+  background-color: #ffffff;
+  width: 600px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.tieu-de-ung-dung {
+  background-color: #7c3aed;
+  color: #ffffff;
+  padding: 30px;
+}
+
+.tieu-de-ung-dung h1 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.tieu-de-ung-dung p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.khung-nhap-viec {
+  padding: 25px 30px;
+  display: flex;
+  gap: 15px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.khung-nhap-viec input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.khung-nhap-viec input:focus {
+  border-color: #7c3aed;
+}
+
+.khung-nhap-viec button {
+  background-color: #7c3aed;
+  color: #ffffff;
+  border: none;
+  padding: 0 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.khung-nhap-viec button:hover {
+  background-color: #6d28d9;
+}
+
+.danh-sach {
+  list-style: none;
+  padding: 20px 30px;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.muc-cong-viec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px dashed #e5e7eb;
+}
+
+.noi-dung-muc {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.noi-dung-muc input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #7c3aed;
+  cursor: pointer;
+}
+
+.ten-cong-viec {
+  font-size: 16px;
+  color: #1f2937;
+}
+
+.hoan-thanh .ten-cong-viec {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.nut-xoa {
+  background-color: #fee2e2;
+  color: #dc2626;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nut-xoa:hover {
+  background-color: #fecaca;
+}
+
+.thong-ke {
+  padding: 20px 30px;
+  background-color: #fafafa;
+  border-top: 1px solid #eaeaea;
+  color: #4b5563;
+  font-size: 14px;
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bài 16-Danh Sách Việc Cần Làm</title>
+    <link rel="stylesheet" href="bai16.css" />
+  </head>
+  <body class="nen-trang">
+    <div class="khung-ung-dung">
+      <header class="tieu-de-ung-dung">
+        <h1>Danh sách việc cần làm</h1>
+        <p>
+          Thêm việc mới, đánh dấu hoàn thành hoặc xoá — tất cả bằng JavaScript.
+        </p>
+      </header>
+
+      <div class="khung-nhap-viec">
+        <input
+          type="text"
+          id="o-nhap-viec"
+          placeholder="Nhập tên công việc mới..."
+        />
+        <button id="nut-them" onclick="themCongViec()">Thêm</button>
+      </div>
+
+      <ul id="danh-sach-viec" class="danh-sach"></ul>
+
+      <div class="thong-ke">
+        <span id="dem-chua-hoan-thành">Còn 0 việc chưa hoàn thành</span>
+      </div>
+    </div>
+    <script src="bai16.js"></script>
+  </body>
+</html>
