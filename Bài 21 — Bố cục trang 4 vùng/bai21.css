@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.nen-trang {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.bo-cuc-trang {
+  display: grid;
+  grid-template-columns: 220px 1fr 180px;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+
+.vung-banner {
+  grid-column: 1 / span 3;
+  background-color: #c62828;
+  background-image: url("Anh/Bai21/Nen_banner.jpg");
+  background-repeat: repeat;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  gap: 20px;
+}
+
+.anh-logo {
+  height: 45px;
+  width: auto;
+}
+
+.tieu-de-trang {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.vung-menu-doc {
+  background-color: #c62828;
+  border-right: 1px solid #8e0000;
+  padding-top: 15px;
+}
+
+.vung-menu-doc ul {
+  list-style: none;
+}
+
+.vung-menu-doc li a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 20px;
+  font-size: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  transition: 0.2s;
+}
+
+.vung-menu-doc li a:hover {
+  background-color: #8e0000;
+}
+
+.vung-noi-dung {
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+.tieu-de-bai-tap {
+  color: #c62828;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hop-menu-con {
+  background-color: #ffe082;
+  padding: 15px 20px;
+  border-radius: 8px;
+  display: flex;
+  gap: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 25px;
+}
+
+.khung-chi-tiet-noi-dung {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 30px;
+  min-height: 250px;
+}
+
+.noi-dung-giua {
+  text-align: center;
+  margin-top: 30px;
+  line-height: 1.8;
+  font-size: 16px;
+  color: #222222;
+}
+
+.vung-quang-cao {
+  background-color: #ffffff;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.anh-quang-cao {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
