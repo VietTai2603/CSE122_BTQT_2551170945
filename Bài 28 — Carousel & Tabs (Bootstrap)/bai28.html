@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Khám phá điểm đến - Bài 28</title>
+    <!-- Nhúng Bootstrap 5 CSS qua CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Tùy chỉnh CSS bổ trợ cho giao diện chuẩn đề bài */
+      body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Chiều rộng khung ứng dụng chính */
+      .khung-ung-dung {
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      /* Chiều cao cố định và bo góc cho Carousel */
+      .carousel {
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      }
+
+      .carousel-item img {
+        height: 340px;
+        object-fit: cover;
+      }
+
+      /* Tùy chỉnh caption chú thích dễ đọc */
+      .carousel-caption {
+        background: rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(4px);
+        border-radius: 12px;
+        padding: 12px 20px;
+        bottom: 25px;
+      }
+
+      /* Định dạng nội dung khung Tab */
+      .khung-noi-dung-tab {
+        background-color: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+      }
+
+      /* Đổi màu active cho Nav Pills */
+      .nav-pills .nav-link.active {
+        background-color: #0d6efd;
+        font-weight: bold;
+      }
+
+      .nav-pills .nav-link {
+        color: #0d6efd;
+        font-size: 16px;
+        padding: 8px 24px;
+      }
+    </style>
+  </head>
+  <body class="py-5">
+    <main class="khung-ung-dung px-3">
+      <!-- TIÊU ĐỀ TRANG -->
+      <h2 class="text-center text-primary fw-bold mb-4">Khám phá điểm đến</h2>
+
+      <!-- 1. COMPONENT CAROUSEL (Trình chiếu 3 ảnh tự chạy) -->
+      <div
+        id="carouselDiemDen"
+        class="carousel slide mb-5"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+      >
+        <!-- Vùng chỉ số Slide (Indicators) -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselDiemDen"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselDiemDen"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselDiemDen"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <!-- Vùng chứa các bức ảnh (Carousel Inner) -->
+        <div class="carousel-inner">
+          <!-- Slide 1: Vịnh Hạ Long (Mặc định Active) -->
+          <div class="carousel-item active">
+            <img
+              src="1-vinh-ha-long.jpg"
+              class="d-block w-100"
+              alt="Vịnh Hạ Long"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="fw-bold mb-1">Vịnh Hạ Long</h4>
+              <p class="mb-0">Di sản thiên nhiên thế giới</p>
+            </div>
+          </div>
+
+          <!-- Slide 2: Thác Bản Giốc -->
+          <div class="carousel-item">
+            <img
+              src="3-thac-ban-gioc.jpg"
+              class="d-block w-100"
+              alt="Thác Bản Giốc"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="fw-bold mb-1">Thác Bản Giốc</h4>
+              <p class="mb-0">Thác nước đẹp nhất Việt Nam</p>
+            </div>
+          </div>
+
+          <!-- Slide 3: Fansipan -->
+          <div class="carousel-item">
+            <img src="4-fansipan.jpg" class="d-block w-100" alt="Fansipan" />
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="fw-bold mb-1">Fansipan</h4>
+              <p class="mb-0">Mái nhà Đông Dương hùng vĩ</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nút Prev / Next điều hướng -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselDiemDen"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Trước</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselDiemDen"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Sau</span>
+        </button>
+      </div>
+
+      <!-- 2. THANH CHỌN TAB (Nav-pills) -->
+      <ul
+        class="nav nav-pills justify-content-center gap-3 mb-4"
+        id="tabMenu"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="tab-gioithieu"
+            data-bs-toggle="pill"
+            data-bs-target="#noi-dung-gioithieu"
+            type="button"
+            role="tab"
+            aria-controls="noi-dung-gioithieu"
+            aria-selected="true"
+          >
+            Giới thiệu
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="tab-lichtrinh"
+            data-bs-toggle="pill"
+            data-bs-target="#noi-dung-lichtrinh"
+            type="button"
+            role="tab"
+            aria-controls="noi-dung-lichtrinh"
+            aria-selected="false"
+          >
+            Lịch trình
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="tab-chiphi"
+            data-bs-toggle="pill"
+            data-bs-target="#noi-dung-chiphi"
+            type="button"
+            role="tab"
+            aria-controls="noi-dung-chiphi"
+            aria-selected="false"
+          >
+            Chi phí
+          </button>
+        </li>
+      </ul>
+
+      <!-- 3. KHUNG NỘI DUNG TAB (Tab-content) -->
+      <div class="tab-content" id="myTabContent">
+        <!-- Nội dung Tab 1: Giới thiệu -->
+        <div
+          class="tab-pane fade show active khung-noi-dung-tab"
+          id="noi-dung-gioithieu"
+          role="tabpanel"
+          aria-labelledby="tab-gioithieu"
+        >
+          <p class="mb-0 text-dark">
+            Tour 3 ngày 2 đêm khám phá các danh thắng miền Bắc, khởi hành hằng
+            tuần.
+          </p>
+        </div>
+
+        <!-- Nội dung Tab 2: Lịch trình -->
+        <div
+          class="tab-pane fade khung-noi-dung-tab"
+          id="noi-dung-lichtrinh"
+          role="tabpanel"
+          aria-labelledby="tab-lichtrinh"
+        >
+          <p class="mb-0 text-dark">
+            <strong>Lịch trình chi tiết:</strong><br />• Ngày 1: Hà Nội – Vịnh
+            Hạ Long (Thăm hang Sung Sốt, chèo thuyền Kayak).<br />• Ngày 2: Hạ
+            Long – Cao Bằng (Khám phá Thác Bản Giốc).<br />• Ngày 3: Sa Pa –
+            Chinh phục đỉnh Fansipan – Trở về Hà Nội.
+          </p>
+        </div>
+
+        <!-- Nội dung Tab 3: Chi phí -->
+        <div
+          class="tab-pane fade khung-noi-dung-tab"
+          id="noi-dung-chiphi"
+          role="tabpanel"
+          aria-labelledby="tab-chiphi"
+        >
+          <p class="mb-0 text-dark">
+            <strong>Chi phí trọn gói:</strong> 3.500.000 VNĐ / khách (Đã bao gồm
+            xe đưa đón, khách sạn 3 sao, ăn uống và vé tham quan).
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Nhúng Bootstrap 5 JS Bundle qua CDN (Bắt buộc cho Carousel & Tab) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
