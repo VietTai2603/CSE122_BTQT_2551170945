@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bài 20 - Hiệu ứng ảnh CSS3 Filter</title>
+    <link rel="stylesheet" href="bai20.css" />
+  </head>
+  <body class="nen-toi">
+    <main class="khung-ung-dung">
+      <div class="khung-hien-thi">
+        <img
+          id="anh-hoa-hong"
+          src="hoahong.gif"
+          alt="Hoa hồng"
+          class="anh-hoa hieu-ung-gray"
+        />
+        <div class="dong-chu-dac-biet">Special For You</div>
+      </div>
+
+      <div class="thanh-nut-bam">
+        <button
+          class="nut-hieu-ung da-chon"
+          onclick="doiHieuUng(this, 'hieu-ung-gray')"
+        >
+          Gray
+        </button>
+        <button
+          class="nut-hieu-ung"
+          onclick="doiHieuUng(this, 'hieu-ung-xray')"
+        >
+          Xray
+        </button>
+        <button
+          class="nut-hieu-ung"
+          onclick="doiHieuUng(this, 'hieu-ung-invert')"
+        >
+          Invert
+        </button>
+        <button
+          class="nut-hieu-ung"
+          onclick="doiHieuUng(this, 'hieu-ung-fliph')"
+        >
+          FlipH
+        </button>
+        <button
+          class="nut-hieu-ung"
+          onclick="doiHieuUng(this, 'hieu-ung-flipv')"
+        >
+          FlipV
+        </button>
+        <button
+          class="nut-hieu-ung"
+          onclick="doiHieuUng(this, 'hieu-ung-glow')"
+        >
+          Glow
+        </button>
+        <button
+          class="nut-hieu-ung"
+          onclick="doiHieuUng(this, 'hieu-ung-shadow')"
+        >
+          Shadow
+        </button>
+        <button
+          class="nut-hieu-ung"
+          onclick="doiHieuUng(this, 'hieu-ung-boldshadow')"
+        >
+          Bold Shadow
+        </button>
+        <button
+          class="nut-hieu-ung"
+          onclick="doiHieuUng(this, 'hieu-ung-dropshadow')"
+        >
+          DropShadow
+        </button>
+        <button
+          class="nut-hieu-ung"
+          onclick="doiHieuUng(this, 'hieu-ung-blur')"
+        >
+          Blur
+        </button>
+        <button
+          class="nut-hieu-ung"
+          onclick="doiHieuUng(this, 'hieu-ung-wave')"
+        >
+          Wave
+        </button>
+        <button
+          class="nut-hieu-ung"
+          onclick="doiHieuUng(this, 'hieu-ung-mask')"
+        >
+          Mask
+        </button>
+        <button
+          class="nut-hieu-ung"
+          onclick="doiHieuUng(this, 'hieu-ung-alpha')"
+        >
+          Alpha
+        </button>
+      </div>
+    </main>
+
+    <svg style="display: none">
+      <filter id="svg-wave">
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.03"
+          numOctaves="1"
+          result="noise"
+        />
+        <feDisplacementMap
+          in="SourceGraphic"
+          in2="noise"
+          scale="10"
+          xChannelSelector="R"
+          yChannelSelector="G"
+        />
+      </filter>
+    </svg>
+
+    <script src="bai20.js"></script>
+  </body>
+</html>
